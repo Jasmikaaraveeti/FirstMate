@@ -1,0 +1,25 @@
+## Project Structure
+
+```
+maintainers-first-mate/
+├── backend/
+│   ├── agent.ts              # Claude agent loop
+│   ├── coral-queries.sql     # All Coral SQL queries
+│   ├── sources/
+│   │   ├── github.yaml       # GitHub Coral source spec
+│   │   └── slack.yaml        # Slack Coral source spec
+│   └── server.ts             # Express server (optional)
+├── frontend/
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── components/
+│   │   │   ├── IssueTriage.tsx
+│   │   │   ├── DuplicateDetector.tsx
+│   │   │   ├── ReleaseNoteGenerator.tsx
+│   │   │   └── SlackContext.tsx
+│   │   └── styles/
+│   └── package.json
+├── coral-config.yaml         # Coral settings + API keys
+├── .env.example
+└── README.md
+```
